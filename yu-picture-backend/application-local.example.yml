@@ -1,0 +1,19 @@
+# Copy to application-local.yml beside pom.xml, never inside resources.
+# Run Maven / java -jar from this directory to load the external file.
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/yu_picture?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: yu_picture
+    password: "replace-with-your-database-password"
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: "replace-with-your-redis-password"
+    database: 0
+cos:
+  client:
+    host: https://replace-with-your-cos-host.example.invalid
+    secretId: "replace-with-your-secret-id"
+    secretKey: "replace-with-your-secret-key"
+    region: ap-guangzhou
+    bucket: replace-with-your-bucket
